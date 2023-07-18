@@ -26,11 +26,12 @@ questions = Question.create!([{ body: 'What is has_many?', test_id: tests[0].id 
                               { body: 'Choose a C++ library.', test_id: tests[2].id },
                               { body: 'How do you control Ruby versions on your local machine?', test_id: tests[3].id }])
 
-answers = Answer.create!([{ body: 'A relationship indicates a one-to-many connection to another model.', correct: true, question_id: questions[0].id },
-                          { body: 'Link indicates that another model has a link to this model.', question_id: questions[0].id },
-                          { body: 'Line, tuple, num.', correct: true, question_id: questions[1].id },
-                          { body: 'List, sets, dictionary', question_id: questions[1].id },
-                          { body: 'OpenMB', correct: true, question_id: questions[2].id },
-                          { body: 'SPL', question_id: questions[2].id },
-                          { body: 'RVM', correct: true, question_id: questions[3].id },
-                          { body: 'NVM', question_id: questions[3].id }])
+Answer.create!([{ body: 'A relationship indicates a one-to-many connection to another model.', correct: true, question_id: questions[0].id },
+                { body: 'Link indicates that another model has a link to this model.', question_id: questions[0].id },
+                { body: 'Line, tuple, num.', correct: true, question_id: questions[1].id },
+                { body: 'List, sets, dictionary', question_id: questions[1].id },
+                { body: 'OpenMB', correct: true, question_id: questions[2].id },
+                { body: 'SPL', question_id: questions[2].id },
+                { body: 'RVM', correct: true, question_id: questions[3].id },
+                { body: 'NVM', question_id: questions[3].id }])
+                          
