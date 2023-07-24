@@ -21,42 +21,42 @@ web = Category.create!(title: 'Web')
 desktop = Category.create!(title: 'Desktop')
 
 # Ruby
-ruby_test = Test.create!(title: 'Ruby', level: '1', author_id: denis.id, category_id: desktop.id)
-ruby_quest = Question.create!(body: 'How do you control Ruby versions on your local machine?', test_id: ruby_test.id)
+ruby_test = Test.create!(title: 'Ruby', level: '1', author: denis, category: desktop)
+ruby_quest = Question.create!(body: 'How do you control Ruby versions on your local machine?', test: ruby_test)
 Answer.create!(
   [
-    { body: 'RVM', correct: true, question_id: ruby_quest.id },
-    { body: 'NVM', question_id: ruby_quest.id }
+    { body: 'RVM', correct: true, question: ruby_quest },
+    { body: 'NVM', question: ruby_quest }
   ]
 )
 
 # Ruby On Rails
-rails_test = Test.create!(title: 'Ruby on Rails', level: '0', author_id: michail.id, category_id: web.id)
-rails_quest = Question.create!(body: 'What is has_many?', test_id: rails_test.id)
+rails_test = Test.create!(title: 'Ruby on Rails', level: '0', author: michail, category: web)
+rails_quest = Question.create!(body: 'What is has_many?', test: rails_test)
 Answer.create!(
   [
     { body: 'A relationship indicates a one-to-many connection to another model.', correct: true,
-      question_id: rails_quest.id },
-    { body: 'Link indicates that another model has a link to this model.', question_id: rails_quest.id }
+      question: rails_quest },
+    { body: 'Link indicates that another model has a link to this model.', question: rails_quest }
   ]
 )
 
 # Python
-py_test = Test.create!(title: 'Python', level: '1', author_id: michail.id, category_id: web.id)
-py_quest = Question.create!(body: 'Choose immutable built-in types in Python.', test_id: py_test.id)
+py_test = Test.create!(title: 'Python', level: '1', author: michail, category: web)
+py_quest = Question.create!(body: 'Choose immutable built-in types in Python.', test: py_test)
 Answer.create!(
   [
-    { body: 'Line, tuple, num.', correct: true, question_id: py_quest.id },
-    { body: 'List, sets, dictionary', question_id: py_quest.id }
+    { body: 'Line, tuple, num.', correct: true, question: py_quest },
+    { body: 'List, sets, dictionary', question: py_quest }
   ]
 )
 
 # C++
-cpp_test = Test.create!(title: 'C++', level: '2', author_id: denis.id, category_id: desktop.id)
-cpp_quest = Question.create!(body: 'Choose a C++ library.', test_id: cpp_test.id)
+cpp_test = Test.create!(title: 'C++', level: '2', author: denis, category: desktop)
+cpp_quest = Question.create!(body: 'Choose a C++ library.', test: cpp_test)
 Answer.create!(
   [
-    { body: 'OpenMB', correct: true, question_id: cpp_quest.id },
-    { body: 'SPL', question_id: cpp_quest.id }
+    { body: 'OpenMB', correct: true, question: cpp_quest },
+    { body: 'SPL', question: cpp_quest }
   ]
 )
