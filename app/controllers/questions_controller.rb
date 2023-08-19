@@ -1,36 +1,40 @@
 class QuestionsController < ApplicationController
-  before_action :choice_of_test
+  before_action :load_test, only: %i[new create]
+  before_action :set_question, only: %i[show edit update destroy]
 
   rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_question_not_found
 
-  def index
-    questions = @test.questions.map { |question| question.body }
-    render plain: questions.join("\n")
-  end
-
   def show
-    question = @test.questions.find(params[:id]) 
-    render plain: question.body
+    @test = @question.test
   end
 
   def new
-
+    @question = @test.questions.new
   end
 
+  def edit; end
+
   def create
-    question = @test.questions.build(question_params)
+    @question = @test.questions.new(question_params)
     
-    if question.save
-      redirect_to test_questions_path(@test)
+    if @question.save
+      redirect_to @question
     else
-      render plain: 'Question not create!'
+      render :new
+    end
+  end
+
+  def update    
+    if @question.update(question_params)
+      redirect_to @question
+    else
+      render :edit
     end
   end
 
   def destroy
-    question = @test.questions.find(params[:id]) 
-    question.destroy
-    redirect_to test_questions_path(@test)
+    @question.destroy
+    redirect_to test_path(@question.test)
   end
 
   private
@@ -39,8 +43,12 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:body)
   end
 
-  def choice_of_test
+  def load_test
     @test = Test.find(params[:test_id])
+  end
+
+  def set_question
+    @question = Question.find(params[:id])
   end
 
   def rescue_with_question_not_found
