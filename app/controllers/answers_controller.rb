@@ -8,8 +8,7 @@ class AnswersController < ApplicationController
     @answer = @question.answers.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @answer = @question.answers.build(answers_params)

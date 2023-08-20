@@ -1,12 +1,11 @@
 class TestPassage < ApplicationRecord
+  PASS_PERCENTAGE = 85
+
   belongs_to :user
   belongs_to :test
   belongs_to :current_question, class_name: 'Question', optional: true
 
   before_validation :before_validation_set_first_question, on: :create
-  before_save :set_next_question
-
-  PASS_PERCENTAGE = 85
 
   def completed?
     current_question.nil?
@@ -21,7 +20,7 @@ class TestPassage < ApplicationRecord
       self.correct_questions += 1
     end
 
-    
+    self.current_question = next_question
     save!
   end
 
@@ -35,12 +34,8 @@ class TestPassage < ApplicationRecord
     self.current_question = test.questions.first if test.present?
   end
 
-  def set_next_question
-    self.current_question = next_question
-  end
-
   def correct_answer?(answer_ids)
-    correct_answers.ids.sort == answer_ids.map(&:to_i).sort if answer_ids.present?
+    correct_answers.ids.sort == answer_ids.to_a.map(&:to_i).sort #if answer_ids.present?
   end
 
   def correct_answers
