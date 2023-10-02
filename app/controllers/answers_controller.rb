@@ -1,6 +1,6 @@
 class AnswersController < ApplicationController
   
-  before_action :set_answer, only: %i[show] 
+  before_action :set_answer
 
   def show; end
 

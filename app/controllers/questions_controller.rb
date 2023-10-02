@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
 
-  before_action :set_question, only: %i[show] 
+  before_action :set_question
 
   rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_question_not_found
 
