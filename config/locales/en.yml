@@ -31,3 +31,166 @@
 
 en:
   hello: "Hello world"
+
+  helpers:
+    submit:
+      test:
+        create: "Create Test"
+        update: "Update Test"
+      question:
+        create: "Create question"
+        update: "Update question"
+      answer:
+        create: "Create answer"
+        update: "Update answer"
+
+    label:
+      test:
+        title: "Title"
+        level: "Level"
+        category_id: "Category"
+      question:
+        question: "Question"
+      answer:
+        body: "Answer"
+        correct: "Correct"
+
+  shared:
+    errors:
+      header:
+        one: "%{count} error detected"
+        other: "%{count} errors detected"
+    footer:
+        project: "School project"
+        author: "Author: Vladislav Ganiev"
+    header:
+      user: "User"
+      tests: "Tests"
+      logout: "Logout"
+      login: "Login"
+      registration: "Registration"
+      welcome: "Welcome"
+      confirm: "Are you sure?"
+
+
+  layouts:
+      admin:
+        header: "Admin Panel"
+
+  tests:
+    index:
+      header: "Tricky Tests"
+      title: "Title"
+      level: "Level"
+      count: "Count question"
+      actions: "Actions"
+    test:
+      start: "Start"
+
+  questions:
+    header:
+      edit: "Edit"
+      create: "Create New"
+      question: "Question"
+
+  test_passages:
+    result:
+      header: "Test %{title} completed!"
+      passed: "Test passed successfully!"
+      failed: "Test failed!"
+      tests: "All tests"
+    show:
+      header: "Passing the %{title}"
+      question: "Question № %{id}"
+      questions: "All questions: %{count}"
+      next: "Next"
+
+  sessions:
+    success: "Welcome,"
+
+  admin:
+    tests:
+      create:
+        success: "Test was succesfully created."
+      update:
+        success: "Test was succesfully updated."
+      destroy:
+        success: "Test deleted successfully."
+      index:
+        header: "Tricky Tests"
+        test: "New test"
+        title: "Title"
+        level: "Level"
+        question: "Count"
+        actions: "Actions"
+        success: "You are not authorized to view this page."
+      test:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        confirm: "Are you sure?"
+      edit:
+        header: "Edit %{title} test"
+        back: "Back"
+      new:
+        header: "Create new test"
+        back: "Back"
+      show:
+        title: "Title:"
+        level: "Level:"
+        questions: "Questions"
+        actions: "Actions"
+        question: "New question"
+        edit: "Edit"
+        back: "Back"
+    questions:
+      create:
+        success: "Question was succesfully created."
+      update:
+        success: "Question was succesfully updated."
+      destroy:
+        success: "Question deleted successfully."
+      question: "Show question"
+      edit:
+        back: "Back"
+      new:
+        back: "Back"
+      show:
+        header: "Body:"
+        answers: "Answers:"
+        answer: "New answer"
+        edit: "Edit question"
+        delete: "Delete question"
+        confirm: "Are you sure?"
+        back: "Back"
+    answers:
+      create:
+        success: "New answer created."
+      update:
+        success: "Answer updated."
+      destroy:
+        success: "Answer deleted."
+      answer:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        confirm: "Are you sure?"
+      edit:
+        header: "Edit Answer"
+        back: "Back"
+      new:
+        header: "New Answer"
+        back: "Back"
+      show:
+        header: "Question"
+        answer: "Answer:"
+        correct: "Correct:"
+        back: "Back"
+    nav:
+      header: "TestGuru Admin Panel"
+      welcome: "Welcome"
+      logout: "Logout"
+
+  tests_mailer:
+    completed_test:
+      subject: "You just completed the TestGuru test!"

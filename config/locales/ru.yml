@@ -1,3 +1,167 @@
 ru:
   hello: "Привет Мир"
+
+  helpers:
+    submit:
+      test:
+        create: "Создать Тест"
+        update: "Обновить Тест"
+      question:
+        create: "Создать вопрос"
+        update: "Обновить вопрос"
+      answer:
+        create: "Создать ответ"
+        update: "Обновить ответ"
+
+    label:
+      test:
+        title: "Название"
+        level: "Уровень"
+        category_id: "Категория"
+      question:
+        question: "Вопрос"
+      answer:
+        body: "Ответ"
+        correct: "Верный"
+
+  shared:
+    errors:
+      header:
+        few: "Обнаружено %{count} ошибки"
+        many: "Обнаружено %{count} ошибок"
+        one: "Обнаружено %{count} ошибка"
+        other: "Обнаружено %{count} ошибки"
+    footer:
+      project: "Проект школы"
+      author: "Автор: Ганиев Владислав"
+    header:
+      user: "Пользователь"
+      tests: "Тесты"
+      logout: "Выход"
+      login: "Вход"
+      registration: "Регистрация"
+      welcome: "Добро пожаловать"
+      confirm: "Вы уверены?"
+
+  layouts:
+      admin:
+        header: "Панель администратора"
+
+  tests:
+    index:
+      header: "Доступные тесты"
+      title: "Название"
+      level: "Уровень"
+      count: "Кол-во вопросов"
+      actions: "Действие"
+    test:
+      start: "Начать"
+
+  questions:
+    header:
+      edit: "Редактирование"
+      create: "Создание"
+      question: "вопроса"
+
+  test_passages:
+    result:
+      header: "Тест %{title} завершен!"
+      passed: "Тест пройден успешно!"
+      failed: "Тест провален!"
+      tests: "Все тесты"
+    show:
+      header: "Прохожение теста"
+      question: "Вопрос №"
+      questions: "Всего вопросов:"
+      next: "Следующий вопрос"
+
+  sessions:
+    success: "Приветствую,"
   
+  admin:
+    tests:
+      create:
+        success: "Тест был успешно создан."
+      update:
+        success: "Тест был успешно обновлен."
+      destroy:
+        success: "Тест успешно удален."
+      index:
+        header: "Доступные тесты"
+        test: "Создать тест"
+        title: "Название"
+        level: "Уровень"
+        question: "Кол-во вопросов"
+        actions: "Действие"
+        success: "У вас нет прав для просмотра этой страницы."
+      test:
+        show: "Просмотр"
+        edit: "Редактирование"
+        delete: "Удаление"
+        confirm: "Вы уверены?"
+      edit:
+        header: "Редактирование теста %{title}"
+        back: "Назад"
+      new:
+        header: "Создание нового теста"
+        back: "Назад"
+      show:
+        title: "Название:"
+        level: "Уровень:"
+        questions: "Вопросы"
+        actions: "Действие"
+        question: "Создать вопрос"
+        edit: "Редактирование теста"
+        back: "Назад"
+    questions:
+      create:
+        success: "Вопрос был успешно создан."
+      update:
+        success: "Вопрос был успешно обновлен."
+      destroy:
+        success: "Вопрос успешно удален."
+      question:
+        question: "Открыть вопрос"
+      edit:
+        back: "Назад"
+      new:
+        back: "Назад"
+      show:
+        header: "Вопрос:"
+        answers: "Ответы:"
+        answer: "Добавить ответ"
+        edit: "Редактировать вопрос"
+        delete: "Удалить вопрос"
+        confirm: "Вы уверены?"
+        back: "Назад"
+    answers:
+      create:
+        success: "Новый ответ добавлен."
+      update:
+        success: "Ответ обновлен."
+      destroy:
+        success: "Ответ удален."
+      answer:
+        show: "Просмотр"
+        edit: "Редактирование"
+        delete: "Удаление"
+        confirm: "Вы уверены?"
+      edit:
+        header: "Редактирование ответа"
+        back: "Назад"
+      new:
+        header: "Добавление ответа"
+        back: "Назад"
+      show:
+        header: "Вопрос"
+        answer: "Ответ:"
+        correct: "Правильный ответ:"
+        back: "Назад"
+    nav:
+      header: "TestGuru панель администратора"
+      welcome: "Добро пожаловать"
+      logout: "Выход"
+
+  tests_mailer:
+    completed_test:
+      subject: "Вы успешно завершили тест на TestGuru!"

@@ -18,7 +18,7 @@ class Admin::QuestionsController < Admin::BaseController
     @question = @test.questions.new(question_params)
     
     if @question.save
-      redirect_to [:admin, @question]
+      redirect_to [:admin, @question], notice: t('.success')
     else
       render :new
     end
@@ -26,7 +26,7 @@ class Admin::QuestionsController < Admin::BaseController
 
   def update    
     if @question.update(question_params)
-      redirect_to [:admin, @question]
+      redirect_to [:admin, @question], notice: t('.success')
     else
       render :edit
     end
@@ -34,7 +34,7 @@ class Admin::QuestionsController < Admin::BaseController
 
   def destroy
     @question.destroy
-    redirect_to admin_test_path(@question.test)
+    redirect_to admin_test_path(@question.test), notice: t('.success')
   end
 
   private
