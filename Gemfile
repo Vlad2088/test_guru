@@ -31,6 +31,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
 
+gem 'jquery-rails'
+gem 'bootstrap', '~> 4.0'
+
 gem 'net-smtp' # to send email
 gem 'net-imap' # for rspec
 gem 'net-pop'  # for rspec

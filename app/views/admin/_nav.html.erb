@@ -1,8 +1,19 @@
-<div class="nav nav-admin">
-  <span class="nav-admin title"><%= t('.header') %></span>
-  
-  <div class="nav-admin user">
-  <%= t('.welcome') %>, <b class="nav-admin user-email"><%= current_user.first_name %></b> |
-    <%= link_to t('.logout'), destroy_user_session_path, method: :delete %>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to 'TestGuru', root_path, class: 'navbar-brand' %>
+  <span class="navbar-text me-3"><%= t('.header') %></span> 
+
+  <div class="navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav">
+        <span class="navbar-text me-3">
+          <%= t('.welcome') %>, <b class="nav-admin user-email"><%= current_user.first_name %></b>
+        </span> 
+        <li class="nav-item">
+          <%= link_to t('.tests'), tests_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to t('.logout'), destroy_user_session_path, method: :delete, data: { confirm: t('.confirm') }, class: 'nav-link' %>
+        </li>
+      </ul>
   </div>
-</div>
+</nav>
