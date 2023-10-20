@@ -63,7 +63,7 @@ en:
     footer:
         project: "School project"
         author: "Author: Vladislav Ganiev"
-    header:
+    nav:
       user: "User"
       tests: "Tests"
       logout: "Logout"
@@ -71,6 +71,7 @@ en:
       registration: "Registration"
       welcome: "Welcome"
       confirm: "Are you sure?"
+      admin_panel: "Admin panel"
 
 
   layouts:
@@ -190,6 +191,7 @@ en:
       header: "TestGuru Admin Panel"
       welcome: "Welcome"
       logout: "Logout"
+      tests: "Tests"
 
   tests_mailer:
     completed_test:

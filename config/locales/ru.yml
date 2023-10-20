@@ -34,7 +34,7 @@ ru:
     footer:
       project: "Проект школы"
       author: "Автор: Ганиев Владислав"
-    header:
+    nav:
       user: "Пользователь"
       tests: "Тесты"
       logout: "Выход"
@@ -42,6 +42,7 @@ ru:
       registration: "Регистрация"
       welcome: "Добро пожаловать"
       confirm: "Вы уверены?"
+      admin_panel: "Панель администратора"
 
   layouts:
       admin:
@@ -71,8 +72,8 @@ ru:
       tests: "Все тесты"
     show:
       header: "Прохожение теста"
-      question: "Вопрос №"
-      questions: "Всего вопросов:"
+      question: "Вопрос № %{id}"
+      questions: "Всего вопросов: %{count}"
       next: "Следующий вопрос"
 
   sessions:
@@ -158,9 +159,10 @@ ru:
         correct: "Правильный ответ:"
         back: "Назад"
     nav:
-      header: "TestGuru панель администратора"
+      header: "TestGuru панель администратора "
       welcome: "Добро пожаловать"
       logout: "Выход"
+      tests: "Тесты"
 
   tests_mailer:
     completed_test:
