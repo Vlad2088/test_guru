@@ -75,6 +75,12 @@ ru:
       question: "Вопрос № %{id}"
       questions: "Всего вопросов: %{count}"
       next: "Следующий вопрос"
+    
+  gists:
+    create:
+      succes: "GitHub Gist успешно создан. "
+      failure: "GitHub Gist создать не удалось."
+      result: "Посмотреть"
 
   sessions:
     success: "Приветствую,"
@@ -163,6 +169,15 @@ ru:
       welcome: "Добро пожаловать"
       logout: "Выход"
       tests: "Тесты"
+      admin_tests: "Управление тестами"
+      gists: "Заметки пользователей"
+    gists:
+      index:
+        header: "Таблица заметок пользователей"
+        question: "Вопросы"
+        link: "Ссылка на GitHub"
+        first_name: "Имя пользователя"
+        email: "Элетронная почта"
 
   tests_mailer:
     completed_test:

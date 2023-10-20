@@ -105,6 +105,12 @@ en:
       question: "Question № %{id}"
       questions: "All questions: %{count}"
       next: "Next"
+    
+  gists:
+    create:
+      succes: "GitHub Gist successfully created. "
+      failure: "GitHub Gist could not be created."
+      result: "Look"
 
   sessions:
     success: "Welcome,"
@@ -192,6 +198,15 @@ en:
       welcome: "Welcome"
       logout: "Logout"
       tests: "Tests"
+      admin_tests: "Test management"
+      gists: "Gist users"
+    gists:
+      index:
+        header: "User notes table"
+        question: "Questions"
+        link: "Link to GitHub"
+        first_name: "Username"
+        email: "Email"
 
   tests_mailer:
     completed_test:
