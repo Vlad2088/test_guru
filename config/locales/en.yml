@@ -108,7 +108,7 @@ en:
     
   gists:
     create:
-      succes: "GitHub Gist successfully created. "
+      succes_html: "GitHub Gist successfully created %{link}. "
       failure: "GitHub Gist could not be created."
       result: "Look"
 

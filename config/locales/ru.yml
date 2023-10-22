@@ -78,7 +78,7 @@ ru:
     
   gists:
     create:
-      succes: "GitHub Gist успешно создан. "
+      succes_html: "GitHub Gist успешно создан %{link}. "
       failure: "GitHub Gist создать не удалось."
       result: "Посмотреть"
 
