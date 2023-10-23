@@ -4,7 +4,7 @@ class GistsController < ApplicationController
     @test_passage = TestPassage.find(params[:test_passage_id])
     @result = GistQuesnionServise.new(@test_passage.current_question).call
 
-    if @result.success
+    if @result.success == true
       @test_passage.current_question.gist.create!(user: current_user, url: @result.url)
       flash[:notice] = t('.succes_html', link: gist_link(@result.url))
     else
