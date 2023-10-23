@@ -1,22 +1,28 @@
 class GistQuesnionServise
 
+  ACCESS_TOKEN = ENV["github_token"].freeze
+  SERVER_RESPONSE = 201.freeze
+
+  GistObject = Struct.new(:url, :status_server) do
+  
+    def success?
+      status_server == SERVER_RESPONSE
+    end
+  end
+
   def initialize(question, client: nil)
     @question = question
     @test = @question.test
-    @client = client || GitHubClient.new
+    @client = client || Octokit::Client.new(access_token: ACCESS_TOKEN)
   end
 
   def call
-    gist_object
+    @client.create_gist(gist_params)
+    GistObject.new(@client.last_response.data[:html_url], @client.last_response.status)
   end
 
   private
 
-  def gist_object
-    Struct.new('GistObject', :url, :success)
-    response = @client.create_gist(gist_params)
-    Struct::GistObject.new(response.html_url, @client.success?)
-  end
 
   def gist_params
     {
