@@ -31,6 +31,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
 
+gem 'octokit'
+
+gem 'figaro'
+
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0'
 
