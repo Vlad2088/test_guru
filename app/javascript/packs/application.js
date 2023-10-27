@@ -15,4 +15,6 @@ import * as ActiveStorage from "@rails/activestorage"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+import "utilities/sorting"
+import "utilities/password_check"
  
