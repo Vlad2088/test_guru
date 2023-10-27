@@ -26,9 +26,9 @@
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
-  <div class="field registration_form">
+  <div class="field">
     <%= f.label :password_confirmation, t('devise.registrations.confirmation') %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form_control' %>
     <%= octicon 'x-circle', class: 'text-danger hide' %>
     <%= octicon 'check-circle', class: 'text-success hide' %>
   </div>
