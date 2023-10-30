@@ -33,6 +33,7 @@ gem 'devise'
 
 gem 'octokit'
 
+#ENV
 gem 'figaro'
 
 gem 'jquery-rails'
