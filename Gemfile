@@ -37,6 +37,7 @@ gem 'figaro'
 
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0'
+gem 'octicons_helper'
 
 gem 'net-smtp' # to send email
 gem 'net-imap' # for rspec
