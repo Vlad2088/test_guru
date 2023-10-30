@@ -1,6 +1,6 @@
 class GistQuesnionServise
 
-  ACCESS_TOKEN = ENV["GITHUB_TOKEN"].freeze
+  ACCESS_TOKEN = ENV["github_token"].freeze
   SERVER_RESPONSE = 201.freeze
 
   GistObject = Struct.new(:url, :status_server) do

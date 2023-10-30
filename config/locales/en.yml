@@ -150,6 +150,8 @@ en:
         question: "New question"
         edit: "Edit"
         back: "Back"
+      form_inline:
+        submit: "OK"
     questions:
       create:
         success: "Question was succesfully created."

@@ -1,5 +1,14 @@
 <h1><%= t('.header', title: @test_passage.test.title) %></h1>
 
+<div id="progress_bar">
+  <div class="progress">
+    <div class="progress-bar bg-success" role="progressbar"></div>
+  </div>
+  <%= content_tag :p, nil,
+                  class: "progress-bar-value",
+                  data: { progress_question: @test_passage.success_count} %>
+</div>
+
 <p>
   <b><%= @test_passage.current_question.body %></b>
 </p>
