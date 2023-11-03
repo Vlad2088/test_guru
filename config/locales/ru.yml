@@ -120,6 +120,8 @@ ru:
         question: "Создать вопрос"
         edit: "Редактирование теста"
         back: "Назад"
+      form_inline:
+        submit: "Подтвердить"
     questions:
       create:
         success: "Вопрос был успешно создан."
