@@ -8,14 +8,14 @@
 
 User.create!(
   [
-    { name: 'Denis', email: 'denis@yyy.ru', password: '1234' },
-    { name: 'Alex', email: 'alex@qqq.ru', password: '4567' },
-    { name: 'Victor', email: 'victor@vvv.ru', password: '4789' }
+    { first_name: 'Denis', last_name: 'Probnikov', email: 'denis@yyy.ru', password: '123456' },
+    { first_name: 'Alex', last_name: 'Probnikov', email: 'alex@qqq.ru', password: '456789' },
+    { first_name: 'Victor', last_name: 'Probnikov', email: 'victor@vvv.ru', password: '478910' }
   ]
 )
 
-michail = User.create!(name: 'Michail', email: 'michail@yyy.ru', password: 'mi123')
-denis = User.create!(name: 'Denis', email: 'denis@cccc.ru', password: '9876')
+michail = User.create!(first_name: 'Michail', last_name: 'Probnikov', email: 'michail@yyy.ru', password: 'mi1234')
+denis = Admin.create!(first_name: 'Denis', last_name: 'Probnikov', email: 'denis@cccc.ru', password: '987654')
 
 web = Category.create!(title: 'Web')
 desktop = Category.create!(title: 'Desktop')
