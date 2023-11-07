@@ -34,6 +34,7 @@ ru:
     footer:
       project: "Проект школы"
       author: "Автор: Ганиев Владислав"
+      feedback: "Обратная связь"
     nav:
       user: "Пользователь"
       tests: "Тесты"
@@ -184,3 +185,10 @@ ru:
   tests_mailer:
     completed_test:
       subject: "Вы успешно завершили тест на TestGuru!"
+
+  feedback:
+    new:
+      header: "Обратная связь"
+      name: "Ваше имя"
+      email: "Электронная почта"
+      message: "Текст сообщения"
