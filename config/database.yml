@@ -22,6 +22,8 @@ development:
 test:
   <<: *default
   database: test_guru_test
+  username: <%= ENV["postgres_username"] %>
+  password: <%= ENV["postgres_password"] %>
 
 production:
   <<: *default
