@@ -5,6 +5,6 @@ class FeedbacksMailer < ApplicationMailer
     @name = name
     @message = message
 
-    mail to: ENV["admin_email"]
+    mail to: ENV['ADMIN_EMAIL']
   end
 end
