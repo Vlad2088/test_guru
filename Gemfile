@@ -33,8 +33,6 @@ gem 'devise'
 
 gem 'octokit'
 
-gem 'figaro'
-
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0'
 gem 'octicons_helper'
@@ -56,6 +54,9 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
 
   gem 'letter_opener'
+
+  # Environment variables
+  gem 'dotenv-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
