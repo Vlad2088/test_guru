@@ -1,8 +1,6 @@
 <h1><%= t('.header') %></h1>
 
-
-<form>
-  <%= form_with url: new_feedback_path, html: { method: :post }, local: true do |form| %>
+  <%= form_with url: feedback_index_path, html: { method: :post }, local: true do |form| %>
   
     <div class="form-group"> 
       <%= form.label :name, t('.name') %><br>
@@ -19,6 +17,5 @@
       <%= form.text_area :message, size: "70x10" %>
     </div>
 
-    <p><%= form.submit %></p>
+    <p><%= form.submit t('.submit'), class: 'btn btn-primary' %></p>
   <% end %>
-</form>
