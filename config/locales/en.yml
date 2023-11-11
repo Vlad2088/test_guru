@@ -221,3 +221,6 @@ en:
       name: "Name"
       email: "Email"
       message: "Message"
+      submit: "Send"
+    create:
+      success_feedback: "ВYour message has been sent successfully"
