@@ -162,8 +162,10 @@ en:
         success: "Question deleted successfully."
       question: "Show question"
       edit:
+        header: "Edit question:"
         back: "Back"
       new:
+        header: "Create question"
         back: "Back"
       show:
         header: "Body:"
@@ -173,6 +175,8 @@ en:
         delete: "Delete question"
         confirm: "Are you sure?"
         back: "Back"
+      form:
+        body: "Body"
     answers:
       create:
         success: "New answer created."

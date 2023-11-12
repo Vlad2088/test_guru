@@ -133,8 +133,10 @@ ru:
       question:
         question: "Открыть вопрос"
       edit:
+        header: "Редактирование вопроса:"
         back: "Назад"
       new:
+        header: "Создание вопроса"
         back: "Назад"
       show:
         header: "Вопрос:"
@@ -144,6 +146,8 @@ ru:
         delete: "Удалить вопрос"
         confirm: "Вы уверены?"
         back: "Назад"
+      form:
+        body: "Название"
     answers:
       create:
         success: "Новый ответ добавлен."
