@@ -16,15 +16,19 @@ class TestPassage < ApplicationRecord
   end
   
   def accept!(answer_ids)
-    if correct_answer?(answer_ids)
-      self.correct_questions += 1
-    end
+
+    self.correct_questions += 1 if correct_answer?(answer_ids)
+    self.passed = true if test_passed?
 
     save!
   end
 
   def success_count
     (correct_questions.to_f / test.questions.count) * 100
+  end
+
+  def test_passed_ids
+    user.test_passage.where(passed: true).pluck(:test_id).uniq
   end
 
   private

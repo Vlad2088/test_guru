@@ -1,0 +1,22 @@
+<h1><%= t('.header') %></h1>
+
+<p>
+  <strong><%= t('.title') %></strong>
+  <%= @badge.title %>
+</p>
+
+<p>
+  <strong><%= t('.image') %></strong>
+  <%= image_tag @badge.image.url(:large) %>
+</p>
+
+<p>
+  <%= t('.rule_name') %> <%= @badge.rule_name %>
+</p>
+
+<p>
+  <%= t('.rule_value') %> <%= @badge.rule_value %>
+</p>
+
+<%= link_to t('.edit'), edit_admin_badge_path(@badge) %> |
+<%= link_to t('.back'), admin_badges_path %>

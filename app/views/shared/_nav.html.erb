@@ -17,6 +17,9 @@
             <%= link_to t('.tests'), tests_path, class: 'nav-link' %>
           </li>
           <li class="nav-item">
+            <%= link_to t('.badges'), badges_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
             <%= link_to t('.logout'), destroy_user_session_path, method: :delete, data: { confirm: t('.confirm') }, class: 'nav-link' %>
           </li>
         <% else %>
