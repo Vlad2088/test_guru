@@ -1,5 +1,5 @@
 class Badge < ApplicationRecord
-  RULES = %i[attempt? category? level?].freeze
+  RULES = %i[attempt category level].freeze
 
   mount_uploader :image, ImageUploader
 

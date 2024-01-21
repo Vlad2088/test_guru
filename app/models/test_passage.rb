@@ -28,7 +28,7 @@ class TestPassage < ApplicationRecord
   end
 
   def test_passed_ids
-    user.test_passage.where(passed: true).pluck(:test_id).uniq
+    user.test_passages.where(passed: true).pluck(:test_id).uniq
   end
 
   private
