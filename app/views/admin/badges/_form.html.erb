@@ -2,17 +2,17 @@
   <%= render 'shared/errors', resource: @badge %>
 
   <p> 
-    <%= form.label :title %><br>
+    <%= form.label :title, t('.title')  %><br>
     <%= form.text_field :title, id: :badge_title %>
   </p>
 
   <p> 
-    <%= form.label :rule_name %><br>
+    <%= form.label :rule_name, t('.rule_name') %><br>
     <%= form.select :rule_name, Badge::RULES, prompt: true %>
   </p>
 
   <p> 
-    <%= form.label :rule_value %><br>
+    <%= form.label :rule_value, t('.rule_value') %><br>
     <%= form.number_field :rule_value, id: :badge_rule_value %>
   </p>
 

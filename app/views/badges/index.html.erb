@@ -1,5 +1,5 @@
-#Добавить ли вывод всех призов?
 <div class="container">
+  
   <h1><%= t("badges.index.header") %></h1>
 
   <table class="table">
@@ -14,5 +14,7 @@
     <%= render @user_badges %>
     
   </table>
+  
+  <td><%= link_to t('.back'), tests_path %></td>
 
 </div>

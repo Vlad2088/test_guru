@@ -45,4 +45,4 @@ yarn-debug.log*
 # Environment Variables
 .env
 
-.idea
+.idea/
