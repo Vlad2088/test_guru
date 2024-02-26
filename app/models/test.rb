@@ -20,4 +20,8 @@ class Test < ApplicationRecord
   def self.sort_tests_by_categoru(title)
     titles_by_category(title).pluck(:title)
   end
+
+  def timer?
+    timer.positive?
+  end
 end

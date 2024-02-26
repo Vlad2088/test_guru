@@ -1,5 +1,10 @@
 <h1><%= t('.header', title: @test_passage.test.title) %></h1>
 
+
+<div class="timer-container mx-auto bg-secondary">
+  <div class="timer pt-3 pb-3 text-light"  data-timer = "<%= @test_passage.remaining_time %>"></div>
+</div>
+
 <div id="progress_bar">
   <div class="progress">
     <div class="progress-bar bg-success" role="progressbar"></div>

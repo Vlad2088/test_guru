@@ -8,7 +8,7 @@ class TestPassage < ApplicationRecord
   before_validation :set_current_question, on: [:create, :update]
 
   def completed?
-    current_question.nil?
+    time_over? || current_question.nil?
   end
 
   def test_passed?
@@ -16,9 +16,19 @@ class TestPassage < ApplicationRecord
   end
   
   def accept!(answer_ids)
+<<<<<<< Updated upstream
     if correct_answer?(answer_ids)
       self.correct_questions += 1
     end
+=======
+    if time_over?
+      self.current_question = nil
+      return
+    end
+
+    self.correct_questions += 1 if correct_answer?(answer_ids)
+    self.passed = true if test_passed?
+>>>>>>> Stashed changes
 
     save!
   end
@@ -27,6 +37,21 @@ class TestPassage < ApplicationRecord
     (correct_questions.to_f / test.questions.count) * 100
   end
 
+<<<<<<< Updated upstream
+=======
+  def test_passed_ids
+    user.test_passages.where(passed: true).pluck(:test_id).uniq
+  end
+
+  def remaining_time
+    (test.timer - (Time.current - created_at).seconds).to_i
+  end
+
+  def time_over?
+    remaining_time <= 0
+  end
+
+>>>>>>> Stashed changes
   private
 
   def set_current_question

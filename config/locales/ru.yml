@@ -18,6 +18,7 @@ ru:
         title: "Название"
         level: "Уровень"
         category_id: "Категория"
+        timer: "Таймер"
       question:
         question: "Вопрос"
       answer:
@@ -76,6 +77,8 @@ ru:
       question: "Вопрос № %{id}"
       questions: "Всего вопросов: %{count}"
       next: "Следующий вопрос"
+    update:
+      time_over: "Ваше время истекло"
     
   gists:
     create:
@@ -102,6 +105,7 @@ ru:
         question: "Кол-во вопросов"
         actions: "Действие"
         success: "У вас нет прав для просмотра этой страницы."
+        timer: "Таймер"
       test:
         show: "Просмотр"
         edit: "Редактирование"
@@ -121,6 +125,7 @@ ru:
         question: "Создать вопрос"
         edit: "Редактирование теста"
         back: "Назад"
+        timer: "Таймер"
       form_inline:
         submit: "Подтвердить"
     questions:

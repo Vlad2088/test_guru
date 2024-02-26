@@ -10,6 +10,8 @@ class TestPassagesController < ApplicationController
   def update
     @test_passage.accept!(params[:answer_ids])
 
+    flash[:notice] = t('.time_over') if @test_passage.time_over?
+
     if @test_passage.completed?
       TestsMailer.completed_test(@test_passage).deliver_now
       redirect_to result_test_passage_path(@test_passage)
