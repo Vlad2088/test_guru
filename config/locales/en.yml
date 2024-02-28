@@ -49,6 +49,7 @@ en:
         title: "Title"
         level: "Level"
         category_id: "Category"
+        timer: "Timer"
       question:
         question: "Question"
       answer:
@@ -107,6 +108,8 @@ en:
       question: "Question № %{id}"
       questions: "All questions: %{count}"
       next: "Next"
+    update:
+      time_over: "Your time is up"
     
   gists:
     create:
@@ -133,6 +136,7 @@ en:
         question: "Count"
         actions: "Actions"
         success: "You are not authorized to view this page."
+        timer: "Timer"
       test:
         show: "Show"
         edit: "Edit"
@@ -152,6 +156,7 @@ en:
         question: "New question"
         edit: "Edit"
         back: "Back"
+        timer: "Timer"
       form_inline:
         submit: "OK"
     questions:

@@ -24,4 +24,8 @@ class Test < ApplicationRecord
   def self.sort_by_level(level)
     by_level(level).pluck(:title)
   end
+
+  def timer?
+    timer.positive?
+  end
 end
