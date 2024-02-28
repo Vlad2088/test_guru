@@ -14,11 +14,15 @@ class Test < ApplicationRecord
   scope :normal, -> { where(level: 2..4) }
   scope :hard, -> { where(level: 5..Float::INFINITY) }
   scope :by_level, ->(level) { where(level: level) }
-  scope :by_category, ->(title) { joins(:category).where(categories: { title: title}) }
-  scope :titles_by_category, ->(title) { by_category(title).order(title: :desc)}
+  scope :by_category, lambda { |id| joins(:category).where(categories: { id: }).order(title: :desc) } 
+  scope :by_ids,  ->(ids) { where(id: ids) }
 
-  def self.sort_tests_by_categoru(title)
-    titles_by_category(title).pluck(:title)
+  def self.sort_tests_by_categoru(id)
+    by_category(id).pluck(:id)
+  end
+
+  def self.sort_by_level(level)
+    by_level(level).pluck(:title)
   end
 
   def timer?

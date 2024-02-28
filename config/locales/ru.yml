@@ -45,6 +45,7 @@ ru:
       welcome: "Добро пожаловать"
       confirm: "Вы уверены?"
       admin_panel: "Панель администратора"
+      badges: "Награды"
 
   layouts:
       admin:
@@ -183,6 +184,7 @@ ru:
       tests: "Тесты"
       admin_tests: "Управление тестами"
       gists: "Заметки пользователей"
+      badges: "Награды"
     gists:
       index:
         header: "Таблица заметок пользователей"
@@ -190,6 +192,34 @@ ru:
         link: "Ссылка на GitHub"
         first_name: "Имя пользователя"
         email: "Элетронная почта"
+    badges:
+      index:
+        header: "Список наград"
+        new_badge: "Создать награду"
+        back: "Назад"
+        title: "название"
+        image: "медаль"
+        actions: "действия"
+      badge:
+        show: "просмотр"
+        edit: "редактировать"
+        delete: "удалить"
+      show:
+        header: "Награда"
+        title: "название"
+        image: "медаль"
+        rule_name: "правило"
+        rule_value: "значение"
+        edit: "Редактировать"
+        back: "Назад"
+      edit:
+        header: "Редактирование награды"
+        back: "Назад"
+      form:
+        title: "Название"
+        rule_name: "Выбор правила"
+        rule_value: "Ввод значения"
+        
 
   tests_mailer:
     completed_test:
@@ -204,3 +234,10 @@ ru:
       submit: "Отправить"
     create:
       success_feedback: "Ваше сообщение успешно отправлено"
+  
+  badges:
+    index:
+      header: "Ваши награды"
+      title: "название"
+      image: "медаль"
+      back: "Назад"

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  
   devise_for :users, path: :gurus, path_names: { sign_in: :login, sign_out: :logout }, 
                                    controllers: { sessions: 'sessions' }
 
@@ -9,6 +10,8 @@ Rails.application.routes.draw do
 
     post :start, on: :member
   end
+
+  resources :badges, only: :index
 
   resources :feedback, only: %i[new create]
 
@@ -28,6 +31,7 @@ Rails.application.routes.draw do
       end
     end
     resources :gists, only: %i[index destroy]
+    resources :badges
   end
 
 end

@@ -37,6 +37,12 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0'
 gem 'octicons_helper'
 
+# This gem provides a simple and extremely flexible way to upload files from Ruby applications.
+gem 'carrierwave', '~> 3.0'
+
+# A ruby wrapper for ImageMagick or GraphicsMagick command line.
+gem "mini_magick"
+
 gem 'net-smtp' # to send email
 gem 'net-imap' # for rspec
 gem 'net-pop'  # for rspec

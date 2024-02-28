@@ -74,6 +74,7 @@ en:
       welcome: "Welcome"
       confirm: "Are you sure?"
       admin_panel: "Admin panel"
+      badges: "Badges"
 
 
   layouts:
@@ -212,6 +213,7 @@ en:
       tests: "Tests"
       admin_tests: "Test management"
       gists: "Gist users"
+      badges: "Badges"
     gists:
       index:
         header: "User notes table"
@@ -219,6 +221,33 @@ en:
         link: "Link to GitHub"
         first_name: "Username"
         email: "Email"
+    badges:
+      index:
+        header: "Badge list"
+        new_badge: "Create badge"
+        back: "Back"
+        title: "title"
+        image: "image"
+        actions: "actions"
+      badge:
+        show: "show"
+        edit: "edit"
+        delete: "delete"
+      show:
+        header: "Badge"
+        title: "title"
+        image: "image"
+        rule_name: "rule name"
+        rule_value: "value"
+        edit: "Edit"
+        back: "Back"
+      edit:
+        header: "Editing badge"
+        back: "Back"
+      form:
+        title: "Title"
+        rule_name: "Rule name"
+        rule_value: "Value"
 
   tests_mailer:
     completed_test:
@@ -233,3 +262,10 @@ en:
       submit: "Send"
     create:
       success_feedback: "ВYour message has been sent successfully"
+
+  badges:
+    index:
+      header: "You badges"
+      title: "title"
+      image: "image"
+      back: "back"
